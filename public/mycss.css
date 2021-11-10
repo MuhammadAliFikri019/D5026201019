@@ -1,0 +1,73 @@
+.f1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.f2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.f3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.f4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.25px;
+    opacity: 0.5;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container>div {
+
+    width: 200px;
+    height: 100;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#chat {
+    width: 100px;
+    color: black;
+}
+
+#chat:hover {
+    background-color: #e7e7e7;
+}
+
+#keranjang {
+    width: 225px;
+    color: black;
+}
+
+#keranjang:hover {
+    background-color: #e7e7e7;
+}
+
+#beli {
+    width: 280px;
+    background-color: #ec0e49;
+}
+
+#beli:hover {
+    background-color: #c10b3c;
+}

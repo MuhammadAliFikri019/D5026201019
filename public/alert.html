@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MACAM MACAM ALERTS</h1>
+        <br>
+        <p><b>Alerts</b> adalah sebuah notifikasi peringatan yang dimunculkan untuk kepentingan.
+            Dalam Alerts sendiri kita bisa membuat warna dan box alert sesuai masing masing kegunaannya.
+            Alert dapat dibuat dengan .alert class dan diikuti contextual classes anata lain
+            .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light
+            or .alert-dark
+        </p>
+        <p>Dalam penggunaan alert ada beberapa box alert dan warna sesuai kegunaan masing masing kepentingan
+            Dalam alert kita bisa menambahkan alert link, closing alert, dan animasi saat closing alert.
+            Contoh <b>Alerts</b> sebagai berikut :
+        </p>
+        <div class="container">
+            <p>Contoh penggunaan alert dengan alert link, closing alert, dan animasi saat melakukan clossing alert</p>
+            <div class="alert alert-success alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Sukses!</strong> Pesanan anda telah masuk ke keranjang pembelanjaan. <a
+                    href="https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1584943469/Products/278219_1.jpg"
+                    class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> Pesanan anda belum dibayar. Segera lakukan pembayaran. <a
+                    href="data:image/png;base64,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"
+                    class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-warning alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Peringatan!</strong> Flash Sale akan segera berakhir, Segera lakukan checkout pembayaran !!!. <a
+                    href="data:image/png;base64,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"
+                    class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Bahaya!</strong> Bahaya, apakah anda ingin melanjutkan ke halaman yang anda tuju ?. <a
+                    href="https://id.wikipedia.org/wiki/Virus_komputer" class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-primary alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Penting!</strong> Apakah anda sudah melakukan kebaikan hari ini ? Donasi dapat dilakukan di link
+                berikut. <a href="https://kitabisa.com/" class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-secondary alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Secondary!</strong> Anda sudah melakukan kebaikan. Apakah anda ingin menambah kebaikan lagi ?
+                Klik link berikut. <a href="https://wecare.id/" class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-dark alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Dark!</strong> Join Discord agar terasa pengalaman pengguna. <a
+                    href="https://discord.gg/DkejY9tP" class="alert-link">Klik disini</a>.
+            </div>
+            <div class="alert alert-light alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Light!</strong> Subscribe dan like channel youtube Kemendikbud. <a
+                    href="https://www.youtube.com/c/KEMENDIKBUDRI2021" class="alert-link">Klik disni</a>.
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <p> <b>
+                <h2>Eksplorasi</h2>
+            </b>
+        </p>
+        <br>
+        <div classs="container p-5">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-12">
+                    <div class="alert-danger shadow my-3" role="alert" style="border-radius: 20px">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="text-center" style="background:#ce0a1e">
+                                    <svg width="3em" height="3em" style="color:#f1e2e3" viewBox="0 0 16 16"
+                                        class="m-1 bi bi-exclamation-circle-fill" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="alert col-10 my-auto">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true" style="color:#721C24">&times;</span>
+                                </button>
+                                <div class="row">
+                                    <p style="font-size:18px" class="mb-0 font-weight-light"><b
+                                            class="mr-1">Bahaya !</b>Tegangan tinggi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-12">
+                    <div class="alert-primary shadow my-3" role="alert" style="border-radius: 200px">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="text-center" style="background:#0678f3">
+                                    <svg width="5em" height="5em" style="color:#b3e0f5" viewBox="0 0 20 20"
+                                        class="m-1 bi bi-bell-fill" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="alert col-10 my-auto">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true" style="color:#20d44a">&times;</span>
+                                </button>
+                                <div class="row">
+                                    <p style="font-size:30px" class="mb-0 font-weight-bold"><b
+                                            class="mr-1">Peringatan :</b>Dilarang keras memabawa senjata tajam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-md-10">
+                    <div class="alert-success shadow my-9" role="alert" style="border-radius: 0px">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="text-center" style="background:#155724">
+                                    <svg width="3em" height="3em" style="color:#D4EDDA" viewBox="0 0 16 20"
+                                        class="m-1 bi bi-shield-fill-check" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 .5c-.662 0-1.77.249-2.813.525a61.11 61.11 0 0 0-2.772.815 1.454 1.454 0 0 0-1.003 1.184c-.573 4.197.756 7.307 2.368 9.365a11.192 11.192 0 0 0 2.417 2.3c.371.256.715.451 1.007.586.27.124.558.225.796.225s.527-.101.796-.225c.292-.135.636-.33 1.007-.586a11.191 11.191 0 0 0 2.418-2.3c1.611-2.058 2.94-5.168 2.367-9.365a1.454 1.454 0 0 0-1.003-1.184 61.09 61.09 0 0 0-2.772-.815C9.77.749 8.663.5 8 .5zm2.854 6.354a.5.5 0 0 0-.708-.708L7.5 8.793 6.354 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="alert col-10 my-auto">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true" style="color:#155724">&times;</span>
+                                </button>
+                                <div class="row">
+                                    <p style="font-size:18px" class="mb-0 font-weight-light"><b
+                                            class="mr-1">Sukses!</b>Pendafataran anda telah selesai.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-10">
+                    <div class="alert-warning shadow my-1" role="alert" style="border-radius: 10px">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="text-center" style="background:#856404">
+                                    <svg width="3em" height="3em" style="color:#FFF3CD" viewBox="0 0 16 16"
+                                        class="m-1 bi bi-cone-striped" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.97 4.88l.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="alert col-10 my-auto">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true" style="color:#856404">&times;</span>
+                                </button>
+                                <div class="row">
+                                    <p style="font-size:18px" class="mb-0 font-weight-bolder"><b
+                                            class="mr-1">Peringatan:</b>Ambil satu token sebelum memulai.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
