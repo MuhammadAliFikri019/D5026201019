@@ -24,7 +24,12 @@ Route::get('praktikum2', function () {
 });
 
 //melalui controller
+Route::get('tugas5jq',"ViewController@showTugas5") ;
+
 Route::get('ets2021',"ViewController@showETS") ;
 
-Route::get('greetings',"ViewController@showGreetings") ;
-Route::post('sayhi',"ViewController@sayHi") ;
+Route::get('tugaske6php',"ViewController@showTugasphp") ;
+
+// Route::get('greetings',"ViewController@showGreetings") ;
+// Route::post('sayhi',"ViewController@sayHi") ;
+

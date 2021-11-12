@@ -92,8 +92,9 @@
                     <a href="bukalapaknih.html">Praktikum 1</a>
                     <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
+                    <a href="tugas5jq">Tugas 5</a>
                     <a href="ets2021">ETS</a>
-                    <a href="greetings">Tugas PHP</a>
+                    <a href="tugaske6php">Tugas PHP</a>
                 </div>
             </div>
         </div>
