@@ -41,4 +41,11 @@ Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 // Route::get('greetings',"ViewController@showGreetings") ;
 // Route::post('sayhi',"ViewController@sayHi") ;
 
+//route CRUD
+Route::get('/pendapatan','PendapatanController@index');
+Route::get('/pendapatan/tambah','PendapatanController@tambah');
+Route::post('/pendapatan/store','PendapatanController@store');
+Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
+Route::post('/pendapatan/update','PendapatanController@update');
+Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
 
