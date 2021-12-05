@@ -20,8 +20,10 @@ class PendapatanController extends Controller
     public function tambah()
     {
 
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
         // memanggil view tambah
-        return view('pendapatan.tambah');
+        return view('pendapatan.tambah',['pegawai' => $pegawai]);
     }
     // method untuk insert data ke table pendapatan
     public function store(Request $request)
@@ -42,8 +44,12 @@ class PendapatanController extends Controller
     {
         // mengambil data pendapatan berdasarkan id yang dipilih
         $pendapatan = DB::table('pendapatan')->where('ID', $id)->get();
+
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        $status = "Sedang Mengedit" ;
         // passing data pendapatan yang didapat ke view edit.blade.php
-        return view('pendapatan.edit', ['pendapatan' => $pendapatan]);
+        return view('pendapatan.edit', ['pendapatan' => $pendapatan,'pegawai' => $pegawai,'status' => $status]);
     }
     // update data pedapatan
     public function update(Request $request)
