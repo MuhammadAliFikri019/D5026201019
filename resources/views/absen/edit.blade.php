@@ -23,8 +23,7 @@
                     <div class='col-sm-4 input-group date' id='nama'>
                         <select class="form-control" name="idpegawai">
                             @foreach($pegawai as $p )
-                            <option value="{{ $p->pegawai_id }}" @if($p->pegawai_id===$a->IDPegawai) selected="selected"
-                                @endif> {{ $p->pegawai_nama }}</option>
+                                <option value="{{ $p->pegawai_id }}" @if($p->pegawai_id===$a->IDPegawai) selected="selected" @endif> {{ $p->pegawai_nama }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -61,10 +60,10 @@
             <div class='col-lg-9'>
                 <div class="form-group">
                     <label for="nama" class="col-sm-2 control-label">Status :</label>
-                    <input type="radio" id="h" name="status" value="H">
+                    <input type="radio" id="h" name="status" value="H" @if ($a->Status==='H') checked="checked" @endif>
                     <label for="h">HADIR</label><br>
                     <label for="nama" class="col-sm-2 control-label"></label>
-                    <input type="radio" id="a" name="status" value="A" checked="checked">
+                    <input type="radio" id="a" name="status" value="A"  @if ($a->Status==='A') checked="checked" @endif>
                     <label for="a">TIDAK HADIR</label><br>
                 </div>
             </div>

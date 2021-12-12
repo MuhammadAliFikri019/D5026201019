@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Aplikasi Kepegawaian - @yield('title')</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link
         href="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
@@ -28,7 +28,7 @@
                 <li><a href="/pegawai"><i class="far fa-user"></i> Pegawai</a></li>
                 <li><a href="/absen"><i class="far fa-clipboard"></i></i> Absen</a></li>
                 <li><a href="/pendapatan"><i class="far fa-money-bill-alt"></i></i></i> Pendapatan</a></li>
-                <li><a href="#"><i class="far fa-user"></i> Minggu depan</a></li>
+                <li><a href="/laptop"><i class="fas fa-laptop"></i>Laptop</a></li>
                 <li><a href="#"><i class="far fa-user"></i> Praktikum</a></li>
             </ul>
             <div class="social_media">

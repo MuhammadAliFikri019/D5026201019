@@ -9,13 +9,24 @@ use Illuminate\Support\Facades\DB;
 class PendapatanController extends Controller
 {
     public function index()
-    {
-        // mengambil data dari table pegawai
-        $pendapatan = DB::table('pendapatan')->get();
+    // {
+    //     // mengambil data dari table pegawai
+    //     $pendapatan = DB::table('pendapatan')->get();
 
-        // mengirim data pegawai ke view index
+    //     // mengirim data pegawai ke view index
+    //     return view('pendapatan.index', ['pendapatan' => $pendapatan]);
+    // }
+    {
+        // mengambil data dari table pendapatan
+        $pendapatan = DB::table('pendapatan')
+            ->join('pegawai', 'pendapatan.IDPegawai', '=', 'pegawai.pegawai_id')
+            ->select('pendapatan.*', 'pegawai.pegawai_nama')
+            ->paginate(3);
+
+        // mengirim data pendapatan ke view index
         return view('pendapatan.index', ['pendapatan' => $pendapatan]);
     }
+
     // method untuk menampilkan view form tambah pendapatan
     public function tambah()
     {
@@ -50,6 +61,16 @@ class PendapatanController extends Controller
         $status = "Sedang Mengedit" ;
         // passing data pendapatan yang didapat ke view edit.blade.php
         return view('pendapatan.edit', ['pendapatan' => $pendapatan,'pegawai' => $pegawai,'status' => $status]);
+    }
+    public function view($id)
+    {
+        // mengambil data pendapatan berdasarkan id yang dipilih
+        $pendapatan = DB::table('pendapatan')->where('ID', $id)->get();
+
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        // passing data pendapatan yang didapat ke view edit.blade.php
+        return view('pendapatan.detail', ['pendapatan' => $pendapatan,'pegawai' => $pegawai]);
     }
     // update data pedapatan
     public function update(Request $request)
