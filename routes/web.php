@@ -68,3 +68,9 @@ Route::post('/laptop/update','LaptopController@update');
 Route::get('/laptop/hapus/{id}','LaptopController@hapus');
 Route::get('/laptop/cari','LaptopController@cari');
 Route::get('/laptop/detail/{id}','LaptopController@view');
+
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/edit/{id}','Karyawan1Controller@edit');
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+Route::get('/karyawan1/cari','Karyawan1Controller@cari');
+Route::get('/karyawan1/detail/{id}','Karyawan1Controller@view');

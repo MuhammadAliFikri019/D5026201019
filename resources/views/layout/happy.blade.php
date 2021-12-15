@@ -29,7 +29,7 @@
                 <li><a href="/absen"><i class="far fa-clipboard"></i></i> Absen</a></li>
                 <li><a href="/pendapatan"><i class="far fa-money-bill-alt"></i></i></i> Pendapatan</a></li>
                 <li><a href="/laptop"><i class="fas fa-laptop"></i>Laptop</a></li>
-                <li><a href="#"><i class="far fa-user"></i> Praktikum</a></li>
+                <li><a href="/karyawan1"><i class="far fa-user"></i> EAS</a></li>
             </ul>
             <div class="social_media">
                 <a href="https://www.facebook.com/profile.php?id=100012004039481"><i class="fab fa-facebook-f"></i></a>
@@ -50,6 +50,7 @@
         </div>
 
     </div>
+
 </body>
 
 </html>
